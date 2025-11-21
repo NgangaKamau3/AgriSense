@@ -1,0 +1,115 @@
+longitude,latitude,date,crop_type,NDVI,NDWI,NDMI,MSI,NDRE,stress_class,confidence,source,notes
+# Healthy samples - High NDVI, balanced water indices
+36.8219,-1.2921,2024-01-15,wheat,0.82,0.35,0.48,0.52,0.68,0,high,field_survey,Healthy wheat field in vegetative stage
+36.8234,-1.2935,2024-01-15,wheat,0.78,0.32,0.45,0.55,0.65,0,high,field_survey,Adjacent healthy field
+36.8245,-1.2948,2024-02-10,corn,0.75,0.28,0.42,0.58,0.62,0,high,field_survey,Healthy corn in early growth
+36.8256,-1.2962,2024-02-10,corn,0.80,0.33,0.46,0.54,0.66,0,high,field_survey,Well-irrigated corn
+36.8267,-1.2975,2024-03-05,rice,0.85,0.40,0.52,0.48,0.72,0,high,field_survey,Healthy rice paddy
+36.8278,-1.2988,2024-03-05,rice,0.83,0.38,0.50,0.50,0.70,0,high,field_survey,Flooded rice field
+36.8289,-1.3001,2024-01-20,wheat,0.77,0.30,0.44,0.56,0.64,0,medium,field_survey,Healthy but slightly dry
+36.8300,-1.3014,2024-02-15,corn,0.79,0.34,0.47,0.53,0.67,0,high,field_survey,Optimal growth conditions
+36.8311,-1.3027,2024-03-10,rice,0.84,0.39,0.51,0.49,0.71,0,high,field_survey,Peak vegetative growth
+36.8322,-1.3040,2024-01-25,wheat,0.81,0.36,0.49,0.51,0.69,0,high,field_survey,Excellent health
+
+# Water Stress samples - Low NDWI, High MSI, Moderate to Low NDVI
+36.8333,-1.3053,2024-01-15,wheat,0.45,0.15,0.18,1.45,0.35,1,high,field_survey,Severe water stress observed
+36.8344,-1.3066,2024-01-15,wheat,0.38,-0.22,0.08,1.82,0.28,1,high,field_survey,Critical water deficit
+36.8355,-1.3079,2024-02-10,corn,0.42,-0.18,0.12,1.65,0.32,1,high,field_survey,Wilting observed
+36.8366,-1.3092,2024-02-10,corn,0.35,-0.28,0.05,1.95,0.25,1,high,field_survey,Severe drought stress
+36.8377,-1.3105,2024-03-05,rice,0.40,-0.15,0.10,1.70,0.30,1,high,field_survey,Water stress in rice unusual
+36.8388,-1.3118,2024-03-05,rice,0.48,-0.10,0.15,1.55,0.38,1,medium,field_survey,Moderate water stress
+36.8399,-1.3131,2024-01-20,wheat,0.43,-0.20,0.11,1.75,0.33,1,high,field_survey,Irrigation system failure
+36.8410,-1.3144,2024-02-15,corn,0.37,-0.25,0.06,1.88,0.27,1,high,field_survey,Prolonged drought
+36.8421,-1.3157,2024-03-10,rice,0.44,-0.16,0.13,1.62,0.34,1,high,field_survey,Insufficient flooding
+36.8432,-1.3170,2024-01-25,wheat,0.41,-0.19,0.09,1.78,0.31,1,high,field_survey,Water stress spreading
+
+# Heat Stress samples - High MSI, Moderate NDVI, Low NDRE
+36.8443,-1.3183,2024-01-15,wheat,0.52,0.18,0.22,1.85,0.42,2,high,field_survey,Heat wave damage
+36.8454,-1.3196,2024-01-15,wheat,0.48,0.15,0.20,1.95,0.38,2,high,field_survey,Scorching observed
+36.8465,-1.3209,2024-02-10,corn,0.55,0.20,0.24,1.78,0.45,2,high,field_survey,High temperature stress
+36.8476,-1.3222,2024-02-10,corn,0.50,0.16,0.21,1.88,0.40,2,high,field_survey,Leaf curling from heat
+36.8487,-1.3235,2024-03-05,rice,0.53,0.19,0.23,1.82,0.43,2,medium,field_survey,Unusual heat for rice
+36.8498,-1.3248,2024-03-05,rice,0.49,0.17,0.22,1.90,0.39,2,high,field_survey,Heat stress evident
+36.8509,-1.3261,2024-01-20,wheat,0.51,0.18,0.23,1.86,0.41,2,high,field_survey,Combined heat and water stress
+36.8520,-1.3274,2024-02-15,corn,0.54,0.21,0.25,1.75,0.44,2,medium,field_survey,Moderate heat stress
+36.8531,-1.3287,2024-03-10,rice,0.52,0.19,0.24,1.83,0.42,2,high,field_survey,Heat damage to panicles
+36.8542,-1.3300,2024-01-25,wheat,0.47,0.14,0.19,1.92,0.37,2,high,field_survey,Severe heat stress
+
+# Nutrient Deficiency samples - Low NDVI, Low NDRE, Moderate water indices
+36.8553,-1.3313,2024-01-15,wheat,0.35,0.22,0.28,0.85,0.25,3,high,field_survey,Nitrogen deficiency visible
+36.8564,-1.3326,2024-01-15,wheat,0.32,0.20,0.26,0.88,0.22,3,high,field_survey,Yellowing leaves
+36.8575,-1.3339,2024-02-10,corn,0.38,0.24,0.30,0.82,0.28,3,high,field_survey,Phosphorus deficiency
+36.8586,-1.3352,2024-02-10,corn,0.34,0.21,0.27,0.86,0.24,3,high,field_survey,Stunted growth
+36.8597,-1.3365,2024-03-05,rice,0.40,0.26,0.32,0.80,0.30,3,medium,field_survey,Nutrient poor soil
+36.8608,-1.3378,2024-03-05,rice,0.36,0.23,0.29,0.84,0.26,3,high,field_survey,Chlorosis observed
+36.8619,-1.3391,2024-01-20,wheat,0.33,0.19,0.25,0.89,0.23,3,high,field_survey,Severe N deficiency
+36.8630,-1.3404,2024-02-15,corn,0.39,0.25,0.31,0.81,0.29,3,medium,field_survey,Potassium deficiency
+36.8641,-1.3417,2024-03-10,rice,0.37,0.24,0.30,0.83,0.27,3,high,field_survey,Multiple nutrient deficiency
+36.8652,-1.3430,2024-01-25,wheat,0.31,0.18,0.24,0.90,0.21,3,high,field_survey,Poor fertilization
+
+# Disease samples - Low NDVI, Variable water indices, Low NDRE
+36.8663,-1.3443,2024-01-15,wheat,0.28,0.12,0.15,1.05,0.18,4,high,field_survey,Rust fungus detected
+36.8674,-1.3456,2024-01-15,wheat,0.25,0.10,0.12,1.12,0.15,4,high,field_survey,Severe fungal infection
+36.8685,-1.3469,2024-02-10,corn,0.30,0.14,0.18,1.02,0.20,4,high,field_survey,Leaf blight observed
+36.8696,-1.3482,2024-02-10,corn,0.26,0.11,0.14,1.08,0.16,4,high,field_survey,Disease spreading rapidly
+36.8707,-1.3495,2024-03-05,rice,0.32,0.16,0.20,0.98,0.22,4,medium,field_survey,Bacterial leaf blight
+36.8718,-1.3508,2024-03-05,rice,0.28,0.13,0.16,1.04,0.19,4,high,field_survey,Rice blast disease
+36.8729,-1.3521,2024-01-20,wheat,0.24,0.09,0.11,1.15,0.14,4,high,field_survey,Powdery mildew
+36.8740,-1.3534,2024-02-15,corn,0.29,0.15,0.19,1.00,0.21,4,medium,field_survey,Early disease symptoms
+36.8751,-1.3547,2024-03-10,rice,0.27,0.12,0.15,1.06,0.17,4,high,field_survey,Sheath blight
+36.8762,-1.3560,2024-01-25,wheat,0.23,0.08,0.10,1.18,0.13,4,high,field_survey,Multiple disease complex
+
+# Additional samples for better distribution - Healthy
+36.8773,-1.3573,2024-02-01,wheat,0.76,0.31,0.43,0.57,0.63,0,high,field_survey,Healthy field
+36.8784,-1.3586,2024-02-05,corn,0.78,0.33,0.45,0.55,0.65,0,high,field_survey,Good growth
+36.8795,-1.3599,2024-02-20,rice,0.82,0.37,0.49,0.51,0.69,0,high,field_survey,Optimal conditions
+36.8806,-1.3612,2024-03-01,wheat,0.80,0.35,0.47,0.53,0.67,0,high,field_survey,Peak health
+36.8817,-1.3625,2024-03-15,corn,0.83,0.38,0.50,0.50,0.70,0,high,field_survey,Excellent vigor
+
+# Additional Water Stress
+36.8828,-1.3638,2024-02-01,wheat,0.40,-0.17,0.10,1.72,0.30,1,high,field_survey,Water deficit
+36.8839,-1.3651,2024-02-05,corn,0.36,-0.24,0.07,1.85,0.26,1,high,field_survey,Drought conditions
+36.8850,-1.3664,2024-02-20,rice,0.46,-0.12,0.14,1.58,0.36,1,medium,field_survey,Low water availability
+36.8861,-1.3677,2024-03-01,wheat,0.39,-0.21,0.08,1.80,0.29,1,high,field_survey,Irrigation needed
+36.8872,-1.3690,2024-03-15,corn,0.34,-0.26,0.05,1.92,0.24,1,high,field_survey,Critical water stress
+
+# Additional Heat Stress
+36.8883,-1.3703,2024-02-01,wheat,0.50,0.17,0.21,1.87,0.40,2,high,field_survey,Heat damage
+36.8894,-1.3716,2024-02-05,corn,0.53,0.19,0.23,1.81,0.43,2,medium,field_survey,Temperature stress
+36.8905,-1.3729,2024-02-20,rice,0.51,0.18,0.22,1.85,0.41,2,high,field_survey,Heat wave impact
+36.8916,-1.3742,2024-03-01,wheat,0.49,0.16,0.20,1.89,0.39,2,high,field_survey,Scorching evident
+36.8927,-1.3755,2024-03-15,corn,0.52,0.18,0.23,1.84,0.42,2,medium,field_survey,Heat stress moderate
+
+# Additional Nutrient Deficiency
+36.8938,-1.3768,2024-02-01,wheat,0.34,0.21,0.27,0.87,0.24,3,high,field_survey,N deficiency
+36.8949,-1.3781,2024-02-05,corn,0.37,0.24,0.30,0.83,0.27,3,medium,field_survey,Nutrient poor
+36.8960,-1.3794,2024-02-20,rice,0.35,0.22,0.28,0.85,0.25,3,high,field_survey,Chlorosis
+36.8971,-1.3807,2024-03-01,wheat,0.32,0.20,0.26,0.88,0.23,3,high,field_survey,Multiple deficiencies
+36.8982,-1.3820,2024-03-15,corn,0.38,0.25,0.31,0.82,0.28,3,medium,field_survey,Low fertility
+
+# Additional Disease
+36.8993,-1.3833,2024-02-01,wheat,0.27,0.11,0.14,1.07,0.17,4,high,field_survey,Fungal disease
+36.9004,-1.3846,2024-02-05,corn,0.29,0.14,0.18,1.03,0.20,4,medium,field_survey,Disease symptoms
+36.9015,-1.3859,2024-02-20,rice,0.26,0.12,0.15,1.09,0.16,4,high,field_survey,Bacterial infection
+36.9026,-1.3872,2024-03-01,wheat,0.25,0.10,0.13,1.11,0.15,4,high,field_survey,Severe disease
+36.9037,-1.3885,2024-03-15,corn,0.28,0.13,0.17,1.05,0.19,4,medium,field_survey,Disease spreading
+
+# Edge cases and mixed conditions
+36.9048,-1.3898,2024-02-10,wheat,0.55,0.10,0.18,1.35,0.45,1,medium,field_survey,Water stress with some recovery
+36.9059,-1.3911,2024-02-15,corn,0.45,0.08,0.15,1.65,0.35,2,medium,field_survey,Heat and water stress combined
+36.9070,-1.3924,2024-02-20,rice,0.42,0.20,0.25,0.95,0.32,3,medium,field_survey,Nutrient deficiency mild
+36.9081,-1.3937,2024-02-25,wheat,0.38,0.15,0.20,1.15,0.28,4,medium,field_survey,Early disease detection
+36.9092,-1.3950,2024-03-05,corn,0.72,0.29,0.40,0.62,0.60,0,high,field_survey,Recovering from stress
+
+# More diverse spatial distribution
+36.7500,-1.2500,2024-01-10,wheat,0.79,0.34,0.46,0.54,0.66,0,high,field_survey,Different region - healthy
+36.7520,-1.2520,2024-01-12,corn,0.41,-0.19,0.10,1.76,0.31,1,high,field_survey,Different region - water stress
+36.7540,-1.2540,2024-01-14,rice,0.50,0.17,0.21,1.86,0.40,2,high,field_survey,Different region - heat stress
+36.7560,-1.2560,2024-01-16,wheat,0.35,0.22,0.28,0.86,0.25,3,high,field_survey,Different region - nutrient def
+36.7580,-1.2580,2024-01-18,corn,0.27,0.12,0.15,1.08,0.17,4,high,field_survey,Different region - disease
+
+36.9500,-1.4000,2024-03-20,wheat,0.81,0.36,0.48,0.52,0.68,0,high,field_survey,Another region - healthy
+36.9520,-1.4020,2024-03-22,corn,0.39,-0.20,0.09,1.77,0.30,1,high,field_survey,Another region - water stress
+36.9540,-1.4040,2024-03-24,rice,0.51,0.18,0.22,1.85,0.41,2,high,field_survey,Another region - heat stress
+36.9560,-1.4060,2024-03-26,wheat,0.36,0.23,0.29,0.85,0.26,3,high,field_survey,Another region - nutrient def
+36.9580,-1.4080,2024-03-28,corn,0.28,0.13,0.16,1.06,0.18,4,high,field_survey,Another region - disease

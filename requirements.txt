@@ -11,4 +11,10 @@ python-multipart
 streamlit
 geemap
 folium
+tensorflow>=2.13.0
+opencv-python>=4.8.0
+scikit-image>=0.21.0
+pyyaml>=6.0
+seaborn>=0.12.0
+plotly>=5.17.0
 

@@ -1,4 +1,4 @@
-# AgriSense Pro 🛰️🌾
+# AgriSense 🛰️🌾
 
 **Real-Time, Country-Scale Crop Stress Monitoring using Satellite Earth Observation & Machine Learning.**
 
