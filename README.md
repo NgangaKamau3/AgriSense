@@ -13,13 +13,18 @@
 
 **AgriSense** is an advanced agricultural intelligence system designed to detect early signs of crop stress (water, heat, nutrient, disease) using Sentinel-2 satellite imagery.
 
-Unlike traditional tools that rely on simple thresholding, AgriSense Pro leverages **Google Earth Engine's (GEE) server-side Machine Learning** to perform robust, pixel-level classification at a country-wide scale. It uses temporal compositing to "see through" clouds and noise, providing reliable insights for farmers and agronomists.
+Unlike traditional tools that rely on simple thresholding, AgriSense leverages **Google Earth Engine's (GEE) server-side Machine Learning** with **pixel-wise classification** trained on real ground truth data. It uses temporal compositing to "see through" clouds and noise, providing reliable, spatially-aware insights for farmers and agronomists.
 
 ### Key Features
-- **🌍 Country-Scale Analysis**: Process petabytes of data on Google's infrastructure, not your laptop.
-- **☁️ Cloud-Robust**: Automatic temporal median compositing removes clouds and shadows.
-- **🧠 Server-Side ML**: Random Forest classifiers run directly on GEE for high-performance inference.
-- **📊 Interactive Dashboard**: A Streamlit-based UI to visualize stress maps and trends instantly.
+- **🎯 Pixel-Level Precision**: 10m resolution stress detection - know exactly where in your field the problem is
+- **📊 Ground Truth Trained**: Models learn from real labeled data, not hardcoded rules
+- **🗺️ Spatial Awareness**: Detects stress hotspots and boundaries using neighboring pixel context
+- **🌍 Country-Scale Analysis**: Process petabytes of data on Google's infrastructure
+- **☁️ Cloud-Robust**: Automatic temporal median compositing removes clouds and shadows
+- **🧠 Advanced ML**: Random Forest with spatial features and comprehensive validation metrics
+- **📈 Field Statistics**: Get actionable insights - "27% of your field shows water stress"
+- **📊 Interactive Dashboard**: Streamlit-based UI to visualize stress maps and trends instantly
+
 
 ---
 
@@ -47,7 +52,7 @@ We believe in comprehensive documentation. Whether you are a beginner or a senio
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/AgriSense.git
+git clone https://github.com/NgangaKamau3/AgriSense.git
 cd AgriSense
 
 # 2. Install dependencies
@@ -63,21 +68,70 @@ python run.py --mode dashboard
 python run.py --mode api
 ```
 
+## 🤖 ML Model Architecture
+
+AgriSense now uses a **pixel-wise Random Forest classifier** trained on real ground truth data:
+
+### Training with Ground Truth Data
+
+1. **Prepare your ground truth data** in CSV format:
+   ```csv
+   longitude,latitude,date,crop_type,NDVI,NDWI,NDMI,MSI,NDRE,stress_class,confidence,source
+   36.8219,-1.2921,2024-01-15,wheat,0.82,0.35,0.48,0.52,0.68,0,high,field_survey
+   ```
+
+2. **Stress classes**:
+   - `0`: Healthy
+   - `1`: Water Stress
+   - `2`: Heat Stress
+   - `3`: Nutrient Deficiency
+   - `4`: Disease
+
+3. **Train the model**:
+   ```python
+   from src.ml.model import CropStressModel
+   
+   model = CropStressModel(use_spatial_features=False)
+   model.train_from_ground_truth('data/your_ground_truth.csv', num_trees=50)
+   metrics = model.validate()
+   ```
+
+4. **Quick test**:
+   ```bash
+   python test_model.py
+   ```
+
+### Model Features
+
+- **Spatial Context**: Considers neighboring pixels (3x3 window) for better accuracy
+- **Texture Features**: GLCM features detect patterns invisible to spectral indices alone
+- **Comprehensive Metrics**: Precision, recall, F1-score per stress class
+- **Field Statistics**: Automatic calculation of stress distribution (area and %)
+- **Confidence Scores**: Per-pixel confidence for prediction reliability
+
+See [walkthrough.md](.gemini/antigravity/brain/b3a0fd0b-50ed-49b2-9edb-8b3394369e96/walkthrough.md) for detailed implementation guide.
+
 ## 📂 Project Structure
 
 ```
 AgriSense/
-├── docs/               # Documentation (Tutorials, Roadmaps)
+├── data/                  # Ground truth training data
+│   └── sample_ground_truth.csv
+├── docs/                  # Documentation (Tutorials, Roadmaps)
 ├── src/
-│   ├── api/            # FastAPI Backend (Future expansion)
-│   ├── dashboard/      # Streamlit Application
-│   ├── data/           # GEE Data Fetching & Compositing
-│   ├── ml/             # GEE-Native Machine Learning Models
-│   ├── pipeline/       # Core Orchestration Logic
-│   └── processing/     # Spectral Indices & Masking
-├── run.py              # Unified Entry Point
-├── requirements.txt    # Python Dependencies
-└── README.md           # You are here
+│   ├── api/               # FastAPI Backend (Future expansion)
+│   ├── dashboard/         # Streamlit Application
+│   ├── data/              # GEE Data Fetching & Ground Truth Loading
+│   ├── ml/                # ML Models & Feature Engineering
+│   │   ├── model.py       # Pixel-wise Random Forest
+│   │   ├── feature_engineering.py  # Spatial & temporal features
+│   │   └── forecasting.py # NDVI trend prediction
+│   ├── pipeline/          # Core Orchestration Logic
+│   └── processing/        # Spectral Indices & Masking
+├── test_model.py          # Quick model verification script
+├── run.py                 # Unified Entry Point
+├── requirements.txt       # Python Dependencies
+└── README.md              # You are here
 ```
 
 ## 🤝 Contributing

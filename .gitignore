@@ -44,3 +44,40 @@ fla.html
 lbh.html
 sek.html
 tkp.html
+
+# ML Model Artifacts
+models/                    # Trained model files
+*.pkl                      # Pickled models
+*.h5                       # Keras/TensorFlow models
+*.pb                       # TensorFlow SavedModel
+*.onnx                     # ONNX models
+model_info.json            # Model metadata (if contains sensitive info)
+
+# Ground Truth Data (keep sample, ignore real data)
+data/*_ground_truth.csv    # Real ground truth data
+data/ground_truth/         # Ground truth directory
+!data/sample_ground_truth.csv  # Keep sample data in repo
+
+# Evaluation & Reports
+reports/                   # Evaluation reports
+validation_maps/           # Validation visualizations
+*.png                      # Generated plots
+*.jpg                      # Generated images
+*.pdf                      # Generated reports
+
+# TensorFlow & ML Cache
+.keras/
+*.tflite
+checkpoints/
+logs/
+tensorboard/
+
+# Jupyter Notebooks (if added later)
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files
+*.geojson                  # Large GeoJSON files (except config)
+*.shp                      # Shapefiles
+*.tif                      # GeoTIFF files
+*.tiff
