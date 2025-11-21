@@ -1,0 +1,14 @@
+earthengine-api
+numpy
+pandas
+scikit-learn
+fastapi
+uvicorn
+rasterio
+geopandas
+requests
+python-multipart
+streamlit
+geemap
+folium
+
