@@ -12,7 +12,7 @@
 ### Key Bottlenecks for Production
 1.  ~~**The "Ground Truth" Problem**~~:- Model now supports ground truth CSV data with proper train/test splitting and validation metrics.
 2.  ~~**Spatial Resolution**~~: - Pixel-wise classification at 10m resolution with field statistics (area/percentage per stress class).
-3.  **Calibration**: ⚠️ **PARTIALLY RESOLVED** - Infrastructure supports crop-specific training. Need real farm data to calibrate for specific crops and growth stages.
+3.  **Calibration**: - Infrastructure supports crop-specific training. Need real farm data to calibrate for specific crops and growth stages.
 
 ---
 
