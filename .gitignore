@@ -51,7 +51,9 @@ models/                    # Trained model files
 *.h5                       # Keras/TensorFlow models
 *.pb                       # TensorFlow SavedModel
 *.onnx                     # ONNX models
+*.pth                      # PyTorch checkpoints
 model_info.json            # Model metadata (if contains sensitive info)
+training_history.json      # Training logs
 
 # Ground Truth Data (keep sample, ignore real data)
 data/*_ground_truth.csv    # Real ground truth data

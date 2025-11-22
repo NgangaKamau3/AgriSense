@@ -1,3 +1,10 @@
+"""
+Spatial and temporal feature engineering for crop stress detection.
+
+Author: Nganga Kamau
+GitHub: https://github.com/NgangaKamau3/AgriSense
+"""
+
 import ee
 import numpy as np
 from typing import List, Dict, Tuple, Optional

@@ -1,5 +1,7 @@
 # AgriSense Pro Walkthrough
 
+**Author**: Nganga Kamau | **GitHub**: [NgangaKamau3/AgriSense](https://github.com/NgangaKamau3/AgriSense)
+
 ## Overview
 AgriSense Pro is a production-grade crop stress monitoring system. It leverages Google Earth Engine's server-side machine learning to perform country-scale analysis with robust handling of messy data.
 

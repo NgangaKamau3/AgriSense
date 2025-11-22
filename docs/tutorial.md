@@ -1,5 +1,7 @@
 # Building AgriSense: A Deep Dive into Real-Time Crop Stress Detection from Space 🛰️🌾
 
+**Author**: Nganga Kamau | **GitHub**: [NgangaKamau3/AgriSense](https://github.com/NgangaKamau3/AgriSense)
+
 **Welcome, Earth Defenders and Data Wizards!**
 
 Here, we are going to embark on a journey to build **AgriSense**, a system that monitors the health of crops from space. We'll combine the massive scale of **Google Earth Engine (GEE)** with the precision of **Machine Learning** to detect early signs of stress in plants—whether they are thirsty, overheating, or fighting off disease.

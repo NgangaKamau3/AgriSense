@@ -1,3 +1,10 @@
+"""
+Ground truth data loader for AgriSense crop stress classification.
+
+Author: Nganga Kamau
+GitHub: https://github.com/NgangaKamau3/AgriSense
+"""
+
 import ee
 import pandas as pd
 import numpy as np

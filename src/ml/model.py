@@ -1,3 +1,11 @@
+"""
+Crop stress classification model for AgriSense.
+Supports both Random Forest and PyTorch-based pixel-wise classification.
+
+Author: Nganga Kamau
+GitHub: https://github.com/NgangaKamau3/AgriSense
+"""
+
 import ee
 import json
 from pathlib import Path
